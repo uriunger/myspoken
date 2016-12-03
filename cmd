@@ -1,1 +1,1 @@
-java -Djava.net.preferIPv4Stack=true -Djgroups.tcpping.initial_hosts=10.10.151.171[7000],10.10.151.171[8000] -Dbind.port=7000 -Djgroup.bind.adrs=172.17.0.2 -jar jgroups-demo-SNAPSHOT-1.0-jar-with-dependencies.jar tcp.xml
+java -Djgroups.tunnel.gossip_router_hosts=10.10.150.139[9000],10.10.151.171[8000],10.10.151.171[7000] -Djava.net.preferIPv4Stack=true -Djgroups.tcpping.initial_hosts=10.10.150.139[9000],10.10.151.171[8000],10.10.151.171[7000] -Dbind.port=7000 -Djgroup.bind.adrs=172.17.0.3 -jar jgroups-demo-SNAPSHOT-1.0-jar-with-dependencies.jar tcp.xml
